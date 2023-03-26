@@ -2,7 +2,7 @@ import streamlit as st
 import openpyxl as px
 from io import BytesIO
 
-st.title('EPMAデータをコピペ！')
+st.title('EPMAデータを処理！')
 st.write('<p style="font-size: 20px;">EPMAから取得したエクセルデータを補正用エクセルファイルに貼り付けます</p>', unsafe_allow_html=True)
 
 with st.form(key="fileandname"):
