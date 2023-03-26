@@ -9,7 +9,7 @@ with st.form(key="fileandname"):
     #ファイルアップローダー
     EPMAfile = st.file_uploader("☟EPMAのエクセルデータをアップロードしてください",type="xlsx")
     #測定間隔
-    micron = st.number_input("☟測定の間隔は何µmですか？",0,30,2)
+    micron = st.number_input("☟測定の間隔は何µmですか？",0,30,1)
     #完成ファイルの名前
     filename = st.text_input("☟処理後のファイル名を入力してください","")
     #ボタン
@@ -72,3 +72,5 @@ if submit_btn:
         f'{filename}.xlsx',
         "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
     )
+
+st.write('<p style="font-size: 15px;">※Parameter:ALLのエクセルファイルのみ処理可能です<br>※各シート内のコメントが同じ測定点をまとめてひとつのシートにまとめます<br>※処理中はページ右上に"Running"が表示され、処理が終わると"Download"ボタンが出現します</p>', unsafe_allow_html=True)
