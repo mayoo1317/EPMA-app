@@ -73,4 +73,4 @@ if submit_btn:
         "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
     )
 
-st.write('<p style="font-size: 15px;">※Parameter:ALLのエクセルファイルのみ処理可能です。<br>※各シート内でコメントが変わると、別グループとみなし次のシートに移行してまとめます。<br>※グループの総数が100以上となるファイルは処理できません。<br>※処理中はページ右上に"Running"が表示され、処理が終わると"Download"ボタンが出現します</p>', unsafe_allow_html=True)
+st.write('<p style="font-size: 15px;">※Parameter:ALLのエクセルファイルのみ処理可能です。<br>※シート内でコメントが変わると、別グループとみなし次のシートに移行してまとめます。<br>※グループの総数が100以上となる場合は処理できません。<br>※処理中はページ右上に"Running"が表示され、処理が終わると"Download"ボタンが出現します。</p>', unsafe_allow_html=True)
